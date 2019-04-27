@@ -46,53 +46,36 @@
             </div>
         </div>
     </nav>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-custom">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">DONATE</a>
+        </div>
+    </nav>
     <div class="container">
         <div class="row mt-5">
-            <div class="col text-center">
-                <div class="card card__one shadow-lg p-3 mb-5 bg-white rounded">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x200" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text card__desc">This is a longer card with supporting text below as a natural
-                            lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col text-center">
-                <div class="card card__one shadow-lg p-3 mb-5 bg-white rounded">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x200" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text card__desc">This is a longer card with supporting text below as a natural
-                            lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col text-center">
-                <div class="card card__one shadow-lg p-3 mb-5 bg-white rounded">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x200" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text card__desc">This is a longer card with supporting text below as a natural
-                            lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="col">
+                <div class="jumbotron text-dark">
+                    <h1 class="display-4">{{SOME TEXT}}</h1>
+                    <table id="table1" class="table table-hover text-dark">
+                        <thead>
+                            <th>Commodity</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </thead>
+                        <tbody id="table1body">
 
-        <div class="row">
-            <div class="col mt-5">
-                <button type="button" class="btn btn-danger btn-lg btn-block">SOS</button>
+                        </tbody>
+
+                        <tfoot>
+                            <h3>Total Amount: <span id="totalAmount"></span></h3>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous">
@@ -105,6 +88,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"
         integrity="sha256-V52dl3OFjoY+fYAkifhLJ7f1V7mZAKPGCQoWzoQxrEU=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <script>
         $.backstretch("//prod.pbehre.in/Parth/bg1.jpg");
     </script>
