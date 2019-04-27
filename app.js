@@ -53,12 +53,12 @@ function genTableItem(item, price, index) {
     html += "<td>";
     html += `<div class="input-group">
     <input type="button" value="-" class="button-minus" data-field="quantity_` + index + `">
-    <input type="number" step="1" max="" value="1" name="quantity_` + index + `" class="quantity-field" id="item_` + index + `">
+    <input type="number" step="1" max="" value="0" name="quantity_` + index + `" class="quantity-field" id="item_` + index + `">
     <input type="button" value="+" class="button-plus" data-field="quantity_` + index + `">
   </div>
   `;
     html += '</td>';
-    html += '<td id="price_' + index + '" class="prices">' + price + '</td>';
+    html += '<td id="price_' + index + '" class="prices">' + 0 + '</td>';
     html += "</tr>";
     return html;
 }
@@ -74,6 +74,6 @@ $(document).ready(function () {
     $('.button-minus').click((e) => {
         decrementValue(e);
     });
-    $("#totalAmount").html(calculateTotalAmount());
+    $("#totalAmount").html(0);
 
 });
